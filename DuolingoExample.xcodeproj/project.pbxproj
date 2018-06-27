@@ -14,6 +14,7 @@
 		765C40E520E414FF00C8EDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765C40E320E414FF00C8EDB8 /* LaunchScreen.storyboard */; };
 		765C40F020E414FF00C8EDB8 /* DuolingoExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40EF20E414FF00C8EDB8 /* DuolingoExampleTests.swift */; };
 		765C40FB20E414FF00C8EDB8 /* DuolingoExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40FA20E414FF00C8EDB8 /* DuolingoExampleUITests.swift */; };
+		8C3F43A81011996391355CB3 /* Pods_DuolingoExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39718F706E2CA0531216A43 /* Pods_DuolingoExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		765C40F620E414FF00C8EDB8 /* DuolingoExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuolingoExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C40FA20E414FF00C8EDB8 /* DuolingoExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuolingoExampleUITests.swift; sourceTree = "<group>"; };
 		765C40FC20E414FF00C8EDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0BCC7500024CE77AD52A539 /* Pods-DuolingoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuolingoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuolingoExample/Pods-DuolingoExample.release.xcconfig"; sourceTree = "<group>"; };
+		E0FA602BF16B91C622FBA17B /* Pods-DuolingoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuolingoExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuolingoExample/Pods-DuolingoExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E39718F706E2CA0531216A43 /* Pods_DuolingoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuolingoExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3F43A81011996391355CB3 /* Pods_DuolingoExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B69C968D839A613E5C07A83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0FA602BF16B91C622FBA17B /* Pods-DuolingoExample.debug.xcconfig */,
+				B0BCC7500024CE77AD52A539 /* Pods-DuolingoExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		765C40CE20E414FD00C8EDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				765C40EE20E414FF00C8EDB8 /* DuolingoExampleTests */,
 				765C40F920E414FF00C8EDB8 /* DuolingoExampleUITests */,
 				765C40D820E414FD00C8EDB8 /* Products */,
+				3B69C968D839A613E5C07A83 /* Pods */,
+				F33E2D725FAA84A0D9552C2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = DuolingoExampleUITests;
 			sourceTree = "<group>";
 		};
+		F33E2D725FAA84A0D9552C2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E39718F706E2CA0531216A43 /* Pods_DuolingoExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 765C40FF20E414FF00C8EDB8 /* Build configuration list for PBXNativeTarget "DuolingoExample" */;
 			buildPhases = (
+				253144CBCF9DC8BA16B5A8D9 /* [CP] Check Pods Manifest.lock */,
 				765C40D320E414FD00C8EDB8 /* Sources */,
 				765C40D420E414FD00C8EDB8 /* Frameworks */,
 				765C40D520E414FD00C8EDB8 /* Resources */,
@@ -250,6 +275,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		253144CBCF9DC8BA16B5A8D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuolingoExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		765C40D320E414FD00C8EDB8 /* Sources */ = {
@@ -428,6 +474,7 @@
 		};
 		765C410020E414FF00C8EDB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FA602BF16B91C622FBA17B /* Pods-DuolingoExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +493,7 @@
 		};
 		765C410120E414FF00C8EDB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BCC7500024CE77AD52A539 /* Pods-DuolingoExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
