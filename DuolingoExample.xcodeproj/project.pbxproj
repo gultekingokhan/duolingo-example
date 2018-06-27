@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		765C40DB20E414FD00C8EDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40DA20E414FD00C8EDB8 /* AppDelegate.swift */; };
-		765C40DD20E414FD00C8EDB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40DC20E414FD00C8EDB8 /* ViewController.swift */; };
-		765C40E020E414FD00C8EDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765C40DE20E414FD00C8EDB8 /* Main.storyboard */; };
 		765C40E220E414FF00C8EDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765C40E120E414FF00C8EDB8 /* Assets.xcassets */; };
 		765C40E520E414FF00C8EDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765C40E320E414FF00C8EDB8 /* LaunchScreen.storyboard */; };
 		765C40F020E414FF00C8EDB8 /* DuolingoExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40EF20E414FF00C8EDB8 /* DuolingoExampleTests.swift */; };
 		765C40FB20E414FF00C8EDB8 /* DuolingoExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765C40FA20E414FF00C8EDB8 /* DuolingoExampleUITests.swift */; };
+		76BFB54620E419E300CABAE5 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFB54420E419E300CABAE5 /* ExampleViewController.swift */; };
+		76BFB54720E419E300CABAE5 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BFB54520E419E300CABAE5 /* ExampleViewController.xib */; };
 		8C3F43A81011996391355CB3 /* Pods_DuolingoExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39718F706E2CA0531216A43 /* Pods_DuolingoExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		765C40D720E414FD00C8EDB8 /* DuolingoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuolingoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C40DA20E414FD00C8EDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		765C40DC20E414FD00C8EDB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		765C40DF20E414FD00C8EDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		765C40E120E414FF00C8EDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		765C40E420E414FF00C8EDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765C40E620E414FF00C8EDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +46,8 @@
 		765C40F620E414FF00C8EDB8 /* DuolingoExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuolingoExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C40FA20E414FF00C8EDB8 /* DuolingoExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuolingoExampleUITests.swift; sourceTree = "<group>"; };
 		765C40FC20E414FF00C8EDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BFB54420E419E300CABAE5 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		76BFB54520E419E300CABAE5 /* ExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
 		B0BCC7500024CE77AD52A539 /* Pods-DuolingoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuolingoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuolingoExample/Pods-DuolingoExample.release.xcconfig"; sourceTree = "<group>"; };
 		E0FA602BF16B91C622FBA17B /* Pods-DuolingoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuolingoExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuolingoExample/Pods-DuolingoExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E39718F706E2CA0531216A43 /* Pods_DuolingoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuolingoExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,8 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				765C40DA20E414FD00C8EDB8 /* AppDelegate.swift */,
-				765C40DC20E414FD00C8EDB8 /* ViewController.swift */,
-				765C40DE20E414FD00C8EDB8 /* Main.storyboard */,
+				76BFB54920E419EE00CABAE5 /* ExampleViewController */,
 				765C40E120E414FF00C8EDB8 /* Assets.xcassets */,
 				765C40E320E414FF00C8EDB8 /* LaunchScreen.storyboard */,
 				765C40E620E414FF00C8EDB8 /* Info.plist */,
@@ -139,6 +138,15 @@
 				765C40FC20E414FF00C8EDB8 /* Info.plist */,
 			);
 			path = DuolingoExampleUITests;
+			sourceTree = "<group>";
+		};
+		76BFB54920E419EE00CABAE5 /* ExampleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76BFB54420E419E300CABAE5 /* ExampleViewController.swift */,
+				76BFB54520E419E300CABAE5 /* ExampleViewController.xib */,
+			);
+			path = ExampleViewController;
 			sourceTree = "<group>";
 		};
 		F33E2D725FAA84A0D9552C2A /* Frameworks */ = {
@@ -255,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				765C40E520E414FF00C8EDB8 /* LaunchScreen.storyboard in Resources */,
+				76BFB54720E419E300CABAE5 /* ExampleViewController.xib in Resources */,
 				765C40E220E414FF00C8EDB8 /* Assets.xcassets in Resources */,
-				765C40E020E414FD00C8EDB8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765C40DD20E414FD00C8EDB8 /* ViewController.swift in Sources */,
 				765C40DB20E414FD00C8EDB8 /* AppDelegate.swift in Sources */,
+				76BFB54620E419E300CABAE5 /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		765C40DE20E414FD00C8EDB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				765C40DF20E414FD00C8EDB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		765C40E320E414FF00C8EDB8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
